@@ -1,0 +1,12 @@
+{
+  "hit1": { "sounds": [{ "name": "evertasty:hit1", "stream": false }] },
+  "hit2": { "sounds": [{ "name": "evertasty:hit2", "stream": false }] },
+  "whisper": {
+    "sounds": [
+      {
+        "name": "evertasty:whisper",
+        "stream": false
+      }
+    ]
+  }
+}

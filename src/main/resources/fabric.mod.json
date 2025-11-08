@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "evertasty",
+	"version": "${version}",
+	"name": "EVERtasty",
+	"description": "§eEN§r:\nAdds §45§r new trident enchantments and §42§r trident curses :3\n§5 PASSIVE:§r\n§3 Poseidon\\'s Blessing §r – When standing in rain or underwater, increases attack speed and grants Dolphin's Grace while holding a trident\n§3 Forsaken Flame §r – Grants Fire Resistance while holding a trident\n§c ACTIVE:§r\n§6 Infernal Call §r [3 levels] – Hitting a target with melee attacks applies Wither and drains their life force\n§6 Fury of the Depths §r – When you or your target in rain or water, melee hits briefly stagger the target, resetting their attack cooldown for a moment\n§6 Echo of Abyss §r [2 levels] – Killing a creature with a trident deals pure damage in an area around it (radius scales with level) and applies Blindness for 1 second to all entities around in radius\n§eMark of Light§r - Once per minute, you can apply a glow effect to your enemy for 15 seconds\n§4 CURSES:§r\n§4 Curse of Salted Rust §r – The trident slowly loses durability when not in water. However, you can never be affected by the Glowing effect\n§4 Curse of Fatigue §r – Applies constant Hunger, when not in water. However, you can never be affected by the Levitation effect\n\n§eRU§r:\nДобавляет в игру §45§r новых зачарований на трезубец, а также §42§r проклятия на трезубец :3\n§5 ПАССИВНЫЕ:§r\n§3 Poseidon\\'s Blessing §r (Благословение Посейдона) - При нахождении под дождем или в воде ускоряет атаку, а так же дает эффект дельфиньей грации, когда вы держите в руках трезубец\n§3 Forsaken Flame §r (Огненное Отречение) - Когда вы держите в руках трезубец, вам дается эффект сопротивления огню\n§c АКТИВНЫЕ:§r\n§6 Infernal Call §r (Адские Связи)[3 уровня] - При попадании атакой ближнего боя иссушает существо, высасывая его жизненные силы\n§6 Fury of the Depths §r (Ярость глубин) - Когда вы или ваша цель в воде (или под дождем) при попадании атакой ближнего боя ошеломляет существо, сбрасывая индикатор атаки на микро момент\n§6 Echo of Abyss §r (Эхо Бездны)[2 уровня] - При убийстве существа трезубцем, вокруг него в радиусе, который зависит от уровня зачарования, наносится чистый урон всем существам кроме владельца и налаживается эффект слепоты на 1 секунду\n§eЗнак Света§r - Раз в минуту противнику можно наложить эффект свечения на 15 секунд\n§4 ПРОКЛЯТИЯ:§r\n§4 Curse of Salted Rust §r (Проклятие Соленой Ржавчины) - Когда вы не в воде, ваш трезубец теряет со временем прочность. Но на вас никогда не может быть наложен эффект свечения\n§4 Curse of Fatigue §r (Проклятие Застоя) - Когда вы не в воде, на вас наложен постоянный эффект голода. Но на вас никогда не может быть наложен эффект левитации",
+	"authors": [
+		"Crystal",
+        "EVER2east"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/evertasty",
+		"sources": "https://github.com/crystalx375/EVERtasty-Fabric"
+	},
+	"license": "MIT",
+	"icon": "assets/evertasty/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"evertasty.Evertasty"
+		],
+		"client": [
+			"evertasty.EvertastyClient",
+            "evertasty.client.EvertastyClient"
+		]
+	},
+	"mixins": [
+		"evertasty.mixins.json",
+		{
+			"config": "evertasty.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": ">=1.20 <=1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
