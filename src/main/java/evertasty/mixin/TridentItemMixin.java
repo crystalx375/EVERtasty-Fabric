@@ -26,6 +26,10 @@ public class TridentItemMixin {
         int riptide = EnchantmentHelper.getLevel(Enchantments.RIPTIDE, stack);
 
         boolean inWaterOrRain = player.isTouchingWater() || player.getWorld().hasRain(player.getBlockPos());
+        int useTime = stack.getMaxUseTime() - remainingUseTicks;
+        if (useTime < 12) {
+            return;
+        }
         if (riptide > 0 && !inWaterOrRain) {
             return;
         }

@@ -22,7 +22,7 @@ public class Wither extends Enchantment {
             // проверка при взятии
             if (player.getMainHandStack().getItem() == Items.TRIDENT) {
                 if (level == 1) {
-                    living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 120, 1));
+                    living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 110, 1));
                 } else {
                     living.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 10 + (34 * level), level));
                 }

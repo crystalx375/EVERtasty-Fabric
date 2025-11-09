@@ -71,7 +71,7 @@ public class CustomTridentEntity extends TridentEntity {
                 }
             }
             if (enchantment instanceof Wither) {
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 20 * (10 + 34 * level), level));
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 10 + (30 * level), level));
             }
             if (enchantment instanceof VTormoza) {
                 VTormoza.applyEffect((LivingEntity) this.getOwner(), target, stack);

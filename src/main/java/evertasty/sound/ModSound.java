@@ -10,7 +10,6 @@ public class ModSound {
     public static SoundEvent HIT1;
     public static SoundEvent HIT2;
     public static SoundEvent WHISPER;
-    public static SoundEvent[] HIT_ABYSS;
     public static SoundEvent[] HIT_SOUNDS;
 
     public static void registerSounds() {
@@ -20,7 +19,6 @@ public class ModSound {
         HIT_SOUNDS = new SoundEvent[]{HIT1, HIT2};
 
         WHISPER = register("whisper");
-        HIT_ABYSS = new SoundEvent[]{WHISPER};
     }
 
     private static SoundEvent register(String name) {

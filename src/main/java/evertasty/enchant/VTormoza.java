@@ -43,8 +43,8 @@ public class VTormoza extends Enchantment {
                 );
                 target.addStatusEffect(new StatusEffectInstance(AllEffects.STUN, 15, 0, false, false));
                 target.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 10, 0));
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 30, 5));
-                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 1));
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 50, 4));
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 0));
             }
             target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 1));
         }
