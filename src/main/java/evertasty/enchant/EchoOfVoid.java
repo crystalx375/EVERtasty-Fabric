@@ -48,7 +48,7 @@ public class EchoOfVoid extends Enchantment {
         if (!(user.getWorld() instanceof ServerWorld world)) return;
 
         Vec3d pos = deadEntity.getPos();
-        float radius = level * 2.5f;
+        float radius = level * 2f;
         Box box = new Box(pos.add(-radius, -radius, -radius), pos.add(radius, radius, radius));
 
         // исключения энтити
