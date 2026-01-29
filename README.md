@@ -1,6 +1,8 @@
 # EVERtasty-Fabric
 
-Fabric port **EVERtasty**
+Fabric port **EVERtasty**   
+
+[![CodeFactor](https://www.codefactor.io/repository/github/crystalx375/evertasty-fabric/badge)](https://www.codefactor.io/repository/github/crystalx375/evertasty-fabric)
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/evertasty)
 [Modrinth](https://modrinth.com/mod/evertasty/changelog)
